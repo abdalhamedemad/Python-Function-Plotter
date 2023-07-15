@@ -10,6 +10,7 @@ Python GUI program that plots an arbitrary user-entered function.
 
 # Installation
 - Clone the repository
+- Install Python 3.6 or higher
 - Install the required packages using pip:
 ```pip install pyside2 matplotlib numpy pytest```
 
@@ -21,7 +22,7 @@ Python GUI program that plots an arbitrary user-entered function.
 ```pytest test.py```
 
 # How to use
-- Enter a function in the text box
+- Enter a function in the F(X) box
 - Enter the range of x values to plot ( min , max)
 - Click the "Plot" button
 
