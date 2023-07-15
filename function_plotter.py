@@ -133,6 +133,7 @@ class MainWindow(QMainWindow):
             self.statusBar().showMessage("Invalid input the function or x min or x max is empty")
             self.statusBar().setStyleSheet("color: red")
             error = True
+            self.figure.clear()
             return
         try:
             x_min = float(x_min)
@@ -141,15 +142,18 @@ class MainWindow(QMainWindow):
             self.statusBar().showMessage("x min and x max must be numbers")
             self.statusBar().setStyleSheet("color: red")
             error = True
+            self.figure.clear()
             return
         if x_min >= x_max:
             self.statusBar().showMessage("x min must be less than x max")
             self.statusBar().setStyleSheet("color: red")
+            self.figure.clear()
             return
         # evaluate the user function
         x_array_val ,y_array_values = self.evaluateFunction(f_x, x_min, x_max)
         # Check if the function is valid
         if x_array_val == "invalid" and y_array_values == "invalid" :
+            self.figure.clear()
             return
         
         self.statusBar().showMessage("Ready...")

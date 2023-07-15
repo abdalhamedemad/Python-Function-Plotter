@@ -26,3 +26,5 @@ Python GUI program that plots an arbitrary user-entered function.
 - Enter the range of x values to plot ( min , max)
 - Click the "Plot" button
 
+# Screenshots
+![alt text](screenshots/1.png "Screenshot 1")
